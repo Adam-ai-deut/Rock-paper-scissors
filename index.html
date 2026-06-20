@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="game-container">
+        <h1>🌟 VIP Rock Paper Scissors 🌟</h1>
+        <p class="subtitle">Beat the Paparazzi (Computer) on the Red Carpet!</p>
+
+        <div class="scoreboard">
+            <div class="score">
+                <h2 id="player-label">You (VIP)</h2>
+                <span id="player-score">0</span>
+            </div>
+            <div class="score">
+                <h2 id="computer-label">Paparazzi</h2>
+                <span id="computer-score">0</span>
+            </div>
+        </div>
+
+        <div class="result-message">
+            <p id="action-message">Make your move to start the show!</p>
+        </div>
+
+        <div class="choices">
+            <button class="choice-btn" id="rock">
+                <span class="emoji">🪨</span>
+                <span class="label">Rock</span>
+            </button>
+            <button class="choice-btn" id="paper">
+                <span class="emoji">📄</span>
+                <span class="label">Paper</span>
+            </button>
+            <button class="choice-btn" id="scissors">
+                <span class="emoji">✂️</span>
+                <span class="label">Scissors</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

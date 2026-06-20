@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    /* Dark night background */
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    border-bottom: 20px solid #8b0000;
+    /* Red carpet floor */
+}
+
+.game-container {
+    background: linear-gradient(145deg, #1f1f1f, #141414);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+    text-align: center;
+    border: 2px solid #ffd700;
+    /* Gold border */
+    max-width: 600px;
+    width: 90%;
+}
+
+h1 {
+    color: #ffd700;
+    /* Gold */
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #000;
+    border-radius: 10px;
+    border: 1px solid #333;
+}
+
+.score h2 {
+    font-size: 1.2rem;
+    color: #ffd700;
+}
+
+.score span {
+    font-size: 3rem;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+.result-message {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 30px;
+    min-height: 40px;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.choice-btn {
+    background-color: #222;
+    border: 2px solid #ffd700;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice-btn:hover {
+    background-color: #ffd700;
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ffd700;
+    /* Camera flash effect */
+}
+
+.choice-btn:hover .label {
+    color: #000;
+}
+
+.emoji {
+    font-size: 2.5rem;
+}
+
+.label {
+    color: #ffd700;
+    font-weight: bold;
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+
+/* Win/Lose/Tie glow effects injected by JavaScript */
+
+.glow-win {
+    box-shadow: 0 0 30px #4caf50, inset 0 0 10px #4caf50;
+}
+
+.glow-lose {
+    box-shadow: 0 0 30px #f44336, inset 0 0 10px #f44336;
+}
+
+.glow-tie {
+    box-shadow: 0 0 30px #2196f3, inset 0 0 10px #2196f3;
+}
